@@ -39,7 +39,7 @@ const storyNodes = {
     step2: {
         text: `>>> WERYFIKACJA [POZIOM 2/5]\n\nPodaj datę wyjazdu`,
         type: "input",
-        answers: ["15.04.2026", "16.04.2026", "17.04.2026", "18.04.2026","15-18.04.2026"],
+        answers: ["15.04.2026", "16.04.2026", "17.04.2026", "18.04.2026","15-18.04.2026", "15.04.2026-18.04.2026"],
         exact: true,
         hint: "może być dowolny dzień [DD.MM.RRRR]",
         fragment: 1,
