@@ -25,11 +25,11 @@ const storyNodes = {
     explain: {
         text: `>>> IDENTITY: CLASSIFIED\n\nNie ma czasu na zbędne pytania. To, co wgrał łącznik w Tallinnie, miało odwrócić uwagę od prawdziwego ładunku. Jeżeli odpowiesz poprawnie na pytania weryfikacyjne, uzyskasz dostęp do zaszyfrowanej lokalizacji obiektu, którego wszyscy szukali.`,
         options: [
-            { text: "[1] > Rozumiem. Przejdźmy do weryfikacji.", nextNode: "step1" }
+            { text: "[1] > Rozumiem. Przejdźmy do rzeczy", nextNode: "step1" }
         ]
     },
     step1: {
-        text: `>>> WERYFIKACJA TOŻSAMOŚCI [POZIOM 1/5]\n\nAby upewnić się, że wiadomość nie trafiła w niepowołane ręce, odpowiedz:\n\nJak ma na imię gruby?`,
+        text: `>>> WERYFIKACJA TOŻSAMOŚCI [POZIOM 1/5]\n\nMuszę upewnić się, że wiadomość nie trafiła w niepowołane ręce, odpowiedz:\n\nJak ma na imię gruby?`,
         type: "input",
         answers: ["tiago"],
         hint: "rudy",
@@ -37,7 +37,7 @@ const storyNodes = {
         nextNode: "step2"
     },
     step2: {
-        text: `>>> WERYFIKACJA [POZIOM 2/5]\n\nPodaj datę wyjazdu`,
+        text: `>>> WERYFIKACJA [POZIOM 2/5]\n\nTo akurat było proste, spróbujmy coś trudniejszego. Podaj datę wyjazdu`,
         type: "input",
         answers: ["15.04.2026", "16.04.2026", "17.04.2026", "18.04.2026","15-18.04.2026", "15.04.2026-18.04.2026"],
         exact: true,
@@ -46,7 +46,7 @@ const storyNodes = {
         nextNode: "step3"
     },
     step3: {
-        text: `>>> WERYFIKACJA [POZIOM 3/5]\n\n Marka czekolady i słodyczy.`,
+        text: `>>> WERYFIKACJA [POZIOM 3/5]\n\n Nieźle, jeszcze tylko 3 pytania. Marka czekolady i słodyczy.`,
         type: "input",
         answers: ["kalev"],
         hint: "w sklepie firmowym robiliśmy zakupy",
@@ -62,7 +62,7 @@ const storyNodes = {
         nextNode: "step5"
     },
     step5: {
-        text: `>>> OSTATNIA WERYFIKACJA [POZIOM 5/5]\n\nNazwa lumpeksu gdzie kupiłaś sukienkę.`,
+        text: `>>> OSTATNIA WERYFIKACJA [POZIOM 5/5]\n\nTeraz najtrudniejsze ale poprawna odpowiedź da mi 100% pewności, że ty to ty. Nazwa lumpeksu gdzie kupiłaś sukienkę.`,
         type: "input",
         answers: ["Sobralt Sobrale","Sobralt","Sobrale","SobraltSobrale"],
         hint: "odnajdz strone rynku i tam poszukaj jakie sa sklepy",
